@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+  <link rel="stylesheet" href="https://caims2024.org/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://caims2024.org/css/all.min.css">
+      <link rel="stylesheet" href="https://caims2024.org/css/main.min.css?v=1.39">
+      <link rel="stylesheet" href="https://caims2024.org/css/admin-widgets.css?v=1.00">
+  <script src="https://caims2024.org/js/widgets.js?v=1.00"></script>
+  <script src="https://caims2024.org/js/jquery-3.5.0.min.js"></script>
+      <title>CAIMS 2024</title>
+</head>
+<body>
+  <div class="main-wrapper"><button class="nav-button" id="nav-toggler" aria-label="Main menu">
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+</button>
+<nav class="main-navigation overlay-nav" id="nav-menu">
+  <div class="d-flex justify-content-between">
+    <div class="fields-logo-container m-2 desktop-hidden">
+      <a href="http://www.fields.utoronto.ca/" class="p-0">
+        <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <button id="main-nav-close-btn" class="nav-close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div id="mobile-meeting-btn-wrapper">
+    <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2 py-1">
+      <a href="/" rel="home" class="p-0">
+        <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <span class="nav-title">2024 CAIMS•SCMAI<br>Annual Meeting</span>    
+  </div>
+  <div class="container d-flex align-items-center justify-content-around">
+    <div class="mobile-hidden me-4">
+      <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2">
+        <a href="/" rel="home" class="p-0">
+          <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>      
+    </div>
+    <ul class="main-menu pb-5 pb-md-0">
+              <li >
+          <a href="https://caims2024.org" 
+            class="a-menu active-menu-item ">
+            <span>Home</span>          </a>
+                  </li>
+              <li >
+          <a href="https://caims2024.org/about" 
+            class="a-menu ">
+            <span>About</span>          </a>
+                  </li>
+              <li >
+          <a href="https://caims2024.org/registration" 
+            class="a-menu ">
+            <span>Registration</span>          </a>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Program</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="https://caims2024.org/schedule" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-calendar-day"></i>
+                    <span class="ms-3">Schedule</span>
+                  </div>
+                  <div class="submenu-desc">Schedule at a Glance</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="https://caims2024.org/program" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-book-open"></i>
+                    <span class="ms-3">Program</span>
+                  </div>
+                  <div class="submenu-desc">Program at a Glance, Technical Program, My CAIMS</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="https://caims2024.org/minisymposia" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-chalkboard-user"></i>
+                    <span class="ms-3">Minisymposia</span>
+                  </div>
+                  <div class="submenu-desc">Minisymposia, Organizers</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Places</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="https://caims2024.org/travel" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-location-dot"></i>
+                    <span class="ms-3">Travel</span>
+                  </div>
+                  <div class="submenu-desc">Travel, Accommodations, Kingston tourism</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="https://caims2024.org/campus" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-building"></i>
+                    <span class="ms-3">Campus</span>
+                  </div>
+                  <div class="submenu-desc">Campus key locations</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li >
+          <a href="https://caims2024.org/support" 
+            class="a-menu ">
+            <span>Support</span>          </a>
+                  </li>
+          </ul>
+    <div class="mobile-hidden ms-4">
+      <div class="me-0 ms-2 fields-logo-container d-flex">
+        <a href="http://www.fields.utoronto.ca/" class="p-0">
+          <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav> <header class="text-white d-flex flex-column justify-content-end align-items-center home">  
+  <div class="header-overlay d-flex flex-column justify-content-end">
+      <div class="header-text">
+      <h2 id="conf-institution" class="d-flex justify-content-end">
+        <div><img src="/images/logos/caims-logo.png" alt="CAIMS Logo"></div>
+      </h2>
+      <h1><span>2024 CAIMS•SCMAI<br>Annual Meeting</span></h1>      
+    </div>
+    <div style="font-size:0.8em;" class="text-center my-4">
+      <h3 id="conf-society">Canadian Applied and <span class="line-break">Industrial Mathematics Society</span></h3>
+      <h3 id="conf-date">June 24-27, 2024</h3>
+      <h3 id="conf-location" class="mb-3">Kingston, ON</h3>
+    </div>
+      
+  </div>
+</header>
+<div class="main-container"><main>    
+    <div class="container">
+
+        <section>
+            <h2>Latest News</h2>
+            <ul class="latest-news">
+                <li>Due to construction, participants may want to use this <a href="/images/places/shortcut_map.png">map</a> to walk between the BioSciences Complex and the Chernoff Hall/Stirling Hall area.</li>
+                <li>The full <a href="/program">Technical Program</a> is now available.</li>
+                <li>
+                Early bird registration is now closed. Regular registration remains available until the first day of the conference. Please make sure to only use the link provided on our <a href="/registration">REGISTRATION</a> page which leads to a Queen's University Financial Services website.
+                </li>
+                <li>
+                Abstract submission is now closed. If you are part of a mini-symposium and missed the abstract submission deadline, please contact your mini-symposium organizer.
+                </li>
+                <li>
+                    <a href="/schedule">Schedule</a> overview is now available.
+                </li>                
+                            </ul>
+        </section>
+
+        <section>
+            <h2>Special Events</h2>
+            <div class="d-md-flex mw-1000 mx-sm-3 mx-md-4 align-items-center p-sm-2 p-md-4 generic-card mb-5 mt-4">
+                <div class="p-sm-1 p-md-3 mx-auto mw-500 mt-3 mt-md-0" style="flex:1 0 45%">
+                    <div style="min-width:325px;max-width:400px;height:auto;margin:0 auto;">
+                        <a href="https://mast.queensu.ca/~qmss24/">
+                            <img src="/images/logos/queens-summer-school-logo.png" alt="Queen's Summer School" style="width:100%">
+                        </a>
+                    </div>
+                    <p class="text-center my-3">June 17-21, 2024</p>
+                </div>
+                <div class="p-sm-2 p-md-3 my-4 my-md-0">
+                    <p>The <a href="https://mast.queensu.ca/~qmss24/">Queen's Mathematics Summer School</a> is open to undergraduate and Masters students who are interested in spending one week learning exciting, cutting-edge mathematics on the beautiful campus of Queen's University by the shores of Lake Ontario. There will be three courses, each with 9 hours of lecture time over the week.</p>
+                </div>
+            </div>
+            <div class="d-md-flex mw-1000 mx-sm-3 mx-md-4 align-items-center p-sm-2 p-md-4 generic-card">
+                <div class="p-sm-1 p-md-3 mx-auto mw-500 mt-3 mt-md-0" style="flex:1 0 45%">
+                    <div style="width:200px;height:200px;margin:0 auto">
+                        <a href="#">
+                            <img src="/images/other/fluid-mechanics.jpeg" alt="Fluid Mechanics" style="width:100%;border-radius:8px">
+                        </a>
+                    </div>                    
+                </div>
+                <div class="p-sm-2 p-md-3 my-4 my-md-0">
+                    <p><a href="https://caims.ca/canadian-symposium-fluid-dynamics/">The Canadian Symposium on Fluid Dynamics</a> (CSFD) has played an indispensable role within the Canadian applied mathematics community. In 2024, it will proudly mark its 50th anniversary. This significant event will coincide with CAIMS 2024. The CSFD is custom-tailored for applied mathematicians, engineers, and biologists, and covering topics from theoretical PDEs to computational and numerical challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Plenary Speakers</h2>
+            <ul class="bare-list plenary px-md-3 two-col-grid">
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/alexander-anderson.png"
+        alt="Alexander Anderson"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Alexander Anderson</h3>
+      <p class="text-muted">Moffitt Cancer Centre</p>
+    </div>
+  </div>
+  </div>                </li>
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/jeff-calder.png"
+        alt="Jeff Calder"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Jeff Calder</h3>
+      <p class="text-muted">University of Minnesota</p>
+    </div>
+  </div>
+  </div>                </li>
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/jim_gatheral_s.jpeg"
+        alt="Jim Gatheral"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Jim Gatheral</h3>
+      <p class="text-muted">City University of New York</p>
+    </div>
+  </div>
+  </div>                </li>
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/marta-lewicka.png"
+        alt="Marta Lewicka"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Marta Lewicka</h3>
+      <p class="text-muted">University of Pittsburgh</p>
+    </div>
+  </div>
+  </div>                </li>
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/annalisa_quaini.png"
+        alt="Annalisa Quaini"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Annalisa Quaini</h3>
+      <p class="text-muted">University of Houston</p>
+    </div>
+  </div>
+  </div>                </li>
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/sebastian-reich.png"
+        alt="Sebastian Reich"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Sebastian Reich</h3>
+      <p class="text-muted">University of Potsdam</p>
+    </div>
+  </div>
+  </div>                </li>
+                <li>
+                    <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/susanna_terracini.png"
+        alt="Susanna Terracini"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Susanna Terracini</h3>
+      <p class="text-muted">Università di Torino</p>
+    </div>
+  </div>
+  </div>                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Public Lecture</h2>
+            <p class="my-5">
+            <div class="plenary-item mb-5 mb-md-3">
+  <div class="text-center">
+    <div class="mb-3">
+      <img 
+        src="/images/people/ram_murty.png"
+        alt="Ram Murty"
+        class="rounded-circle box-shadow">
+    </div>
+    <div class="profile">
+      <h3 class="mb-1">Ram Murty</h3>
+      <p class="text-muted">Queen's University</p>
+    </div>
+  </div>
+  </div>            </p>
+        </section>
+
+        <section>
+            <h2>Minisymposium Proposal</h2>
+            <p class="px-md-3">
+                <div class="announcement">
+                    Minisymposium proposal submission is now closed.
+                </div>
+            <ul>
+                <li>Minisymposia will consist of 120 minute blocks containing four (4) talks per block.</li>
+                <li>Each talk will be 25 minutes plus 5 minutes for questions and transition.</li>
+                <li>Minisymposium proposals should consist of 4 to 16 speakers.</li>
+                <li>Minisymposium organizers will be contacted with details on how to schedule talks.</li>
+                <li>While all the minisymposia will take place in person, if necessary, it is possible to have a few virtual speakers as part of a submission. We do prefer, however, to keep the number of online talks to not more than 1/3 of the talks in each submitted minisymposium.</li>
+                <li>Review of proposals for minisymposia will begin March 1, 2024.</li>
+                <li>To ensure your proposal is considered, we advise submitting as soon as possible.</li>
+            </ul>
+            </p>
+
+            <div class="announcement">
+                SUBMISSION DATES<br>
+                <span class="pop-clr">OPENS:</span>  December 1, 2023<br>
+                <span class="pop-clr">CLOSES:</span>  <span class="text-decoration-line-through">February 29, 2024</span> March 14, 2024
+            </div>
+
+            
+        </section>
+        
+    </div>
+</main>
+<div class="hidden">
+    <img src="/images/places/kingston-evening2.png" alt="Kingston Waterfront">
+    <img src="/images/places/castle2.png" alt="Thousand Islands Castle">
+</div>  
+  </div> <!-- div.main-container -->
+
+  <footer>
+    <div class="container">      
+      <div class="footer-icons">
+  <a href="https://caims.ca/">
+    <img class="header-logo" src="/images/logos/caims-logo.png" alt="MAA Logo">
+  </a>
+  <a href="https://www.facebook.com/CAIMS.SCMAI/">
+    <img class="header-logo" src="/images/logos/facebook-logo.svg" alt="Facebook Logo">
+  </a>
+  <a href="https://twitter.com/caims_scmai">
+    <img class="header-logo" src="/images/logos/twitter-logo.svg" alt="Twitter Logo">
+  </a>
+  <a href="https://www.youtube.com/channel/UCeVUnfXOJhQBszxxJ8rJSDQ">
+    <img class="header-logo" src="/images/logos/youtube-logo.svg" alt="YouTube Logo">
+  </a>
+  <a href="http://www.fields.utoronto.ca/">
+    <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Fields Logo">
+  </a>
+</div>      
+    </div>
+  </footer>
+  <div style="display:none">Designed by <a href="https://geneseo.edu/~aguilar">Cesar Aguilar</a></div>
+  </div> <!-- div.main-wrapper -->
+
+  <script>
+    // Removes session-message div after 2 seconds
+    
+    // Add event listener when scrolling to change navigation background
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');      
+      const scrollPos = window.scrollY;
+      if (scrollPos > 0) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+    
+  </script>
+  <script src="https://caims2024.org/js/main.js?v=1.03"></script>
+  </body>
+
+  </html>
