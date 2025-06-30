@@ -1,0 +1,40 @@
+/* Styles for DynamicList widget */
+.dynamic-list-remove-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;      
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+}
+.dynamic-list-remove-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  background: rgb(200, 200, 200);
+}
+.dynamic-list-remove-btn:hover {
+  color: red;
+}
+.dynamic-list-add-btn {
+  display: inline-flex;
+  align-items: center;  
+  margin-top: 1em;
+}
+.dynamic-list-add-btn button {  
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  font-size: 2em;
+  border-radius: 50%;
+}
