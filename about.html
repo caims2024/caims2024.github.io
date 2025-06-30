@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/main.css?v=1.39">
+  <link rel="stylesheet" href="/css/admin-widgets.css?v=1.00">
+  <script src="/js/widgets.js?v=1.00"></script>
+  <script src="/js/jquery-3.5.0.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/mathjax-config.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <title>CAIMS 2024 | About</title>
+</head>
+<body>
+  <div class="main-wrapper"><button class="nav-button" id="nav-toggler" aria-label="Main menu">
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+</button>
+<nav class="main-navigation overlay-nav" id="nav-menu">
+  <div class="d-flex justify-content-between">
+    <div class="fields-logo-container m-2 desktop-hidden">
+      <a href="http://www.fields.utoronto.ca/" class="p-0">
+        <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <button id="main-nav-close-btn" class="nav-close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div id="mobile-meeting-btn-wrapper">
+    <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2 py-1">
+      <a href="/" rel="home" class="p-0">
+        <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <span class="nav-title">2024 CAIMS•SCMAI<br>Annual Meeting</span>    
+  </div>
+  <div class="container d-flex align-items-center justify-content-around">
+    <div class="mobile-hidden me-4">
+      <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2">
+        <a href="/" rel="home" class="p-0">
+          <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>      
+    </div>
+    <ul class="main-menu pb-5 pb-md-0">
+              <li >
+          <a href="/" 
+            class="a-menu ">
+            <span>Home</span>          </a>
+                  </li>
+              <li >
+          <a href="/about" 
+            class="a-menu active-menu-item ">
+            <span>About</span>          </a>
+                  </li>
+              <li >
+          <a href="/registration" 
+            class="a-menu ">
+            <span>Registration</span>          </a>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Program</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="/schedule" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-calendar-day"></i>
+                    <span class="ms-3">Schedule</span>
+                  </div>
+                  <div class="submenu-desc">Schedule at a Glance</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/program" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-book-open"></i>
+                    <span class="ms-3">Program</span>
+                  </div>
+                  <div class="submenu-desc">Program at a Glance, Technical Program, My CAIMS</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/minisymposia" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-chalkboard-user"></i>
+                    <span class="ms-3">Minisymposia</span>
+                  </div>
+                  <div class="submenu-desc">Minisymposia, Organizers</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Places</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="/travel" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-location-dot"></i>
+                    <span class="ms-3">Travel</span>
+                  </div>
+                  <div class="submenu-desc">Travel, Accommodations, Kingston tourism</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/campus" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-building"></i>
+                    <span class="ms-3">Campus</span>
+                  </div>
+                  <div class="submenu-desc">Campus key locations</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li >
+          <a href="/support" 
+            class="a-menu ">
+            <span>Support</span>          </a>
+                  </li>
+          </ul>
+    <div class="mobile-hidden ms-4">
+      <div class="me-0 ms-2 fields-logo-container d-flex">
+        <a href="http://www.fields.utoronto.ca/" class="p-0">
+          <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav> <header class="text-white d-flex flex-column justify-content-end align-items-center">  
+  <div class="header-overlay d-flex flex-column justify-content-end">
+      <div class="container mb-4">
+      <h1><span>About</span></h1>       
+    </div>
+      
+  </div>
+</header>
+<div class="main-container"><main>
+  <div class="container">
+    <section>
+      <h2>Conference Venue</h2>
+      <p class="px-md-3">The 2024 CAIMS•SCMAI Annual Meeting will take place from June 24-27, 2024 on the picturesque <a href="https://www.queensu.ca/">Queen's University</a> campus. Talks will be held in Chernoff Hall, Stirling Hall, and the BioSciences Complex.  Visit the <a href="/campus">Campus</a> page for building locations and the <a href="/travel">Travel</a> page for travel and accommodations information.</p>
+      <div class="d-flex justify-content-center align-items-center py-3 flex-wrap">
+        <div class="my-4 my-md-0 mx-auto">
+          <a href="/campus">
+            <img
+              src="/images/places/interactive-map3.png"
+              alt="Queen's University Campus Map"
+              style="width:100%;max-width:400px"
+              class="rounded-3"
+            >
+          </a>
+          <div class="my-3 text-center"><a href="/campus"><span class="btn btn-secondary py-2 my-0">Queen's Campus Map</span></a></div>
+        </div>
+        <div class="my-4 my-md-0 mx-auto">
+          <a href="/travel">
+            <img
+              src="/images/places/kingston-waterfront-s.png"
+              alt="Kingston Waterfront"
+              style="width:100%;max-width:400px"
+              class="rounded-3"
+            >
+          </a>
+          <div class="my-3 text-center"><a href="/travel"><span class="btn btn-secondary py-2 my-0">Travel & Accommodations</span></a></div>
+        </div>
+      </div>
+      <div class="text-center" id="about-queens-logo">
+        <a href="https://www.queensu.ca/">
+          <img
+            src="/images/logos/queens-logo.png"
+            alt="Queen's University Logo"
+          >
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Conference Themes</h2>
+      <ul class="three-col-grid bare-list text-center mt-3">
+        <li class="reveal-img-item">
+          <div class="theme-img">
+  <img 
+    src="/images/other/mathematical-biology.png" 
+    alt="Mathematical Biology" 
+    class="rounded">
+</div>
+<div class="mt-md-3 mt-2">
+  <h4 style="margin:0.25em 0;">Mathematical Biology</h4>
+  <p class="text-muted" style="margin:0.25em 0;">
+    Felicia Magpantay<br>Christoph Frei<br>Tony Humphries  </p>
+</div>        </li>
+        <li class="reveal-img-item">
+          <div class="theme-img">
+  <img 
+    src="/images/other/fluid-mechanics.jpeg" 
+    alt="Fluid Mechanics and Applied PDEs" 
+    class="rounded">
+</div>
+<div class="mt-md-3 mt-2">
+  <h4 style="margin:0.25em 0;">Fluid Mechanics and Applied PDEs</h4>
+  <p class="text-muted" style="margin:0.25em 0;">
+    Adam Oberman<br>Catherine Sulem  </p>
+</div>        </li>
+        <li class="reveal-img-item">
+          <div class="theme-img">
+  <img 
+    src="/images/other/control-theory.png" 
+    alt="Dynamical Systems and Mathematical Physics" 
+    class="rounded">
+</div>
+<div class="mt-md-3 mt-2">
+  <h4 style="margin:0.25em 0;">Dynamical Systems and Mathematical Physics</h4>
+  <p class="text-muted" style="margin:0.25em 0;">
+    Bahman Gharesifard<br>Felicia Magpantay<br>Tony Humphries  </p>
+</div>        </li>
+        <li class="reveal-img-item">
+          <div class="theme-img">
+  <img 
+    src="/images/other/financial-ind-math.jpeg" 
+    alt="Financial and Industrial Mathematics" 
+    class="rounded">
+</div>
+<div class="mt-md-3 mt-2">
+  <h4 style="margin:0.25em 0;">Financial and Industrial Mathematics</h4>
+  <p class="text-muted" style="margin:0.25em 0;">
+    Bahman Gharesifard<br>Christoph Frei  </p>
+</div>        </li>
+        <li class="reveal-img-item">
+          <div class="theme-img">
+  <img 
+    src="/images/other/scientific-computing.jpeg" 
+    alt="Scientific Computing" 
+    class="rounded">
+</div>
+<div class="mt-md-3 mt-2">
+  <h4 style="margin:0.25em 0;">Scientific Computing</h4>
+  <p class="text-muted" style="margin:0.25em 0;">
+    Ben Adcock<br>Catherine Sulem<br>Adam Oberman  </p>
+</div>        </li>
+        <li class="reveal-img-item">
+          <div class="theme-img">
+  <img 
+    src="/images/other/machine-learning.jpeg" 
+    alt="Machine Learning, Optimization and Data Science" 
+    class="rounded">
+</div>
+<div class="mt-md-3 mt-2">
+  <h4 style="margin:0.25em 0;">Machine Learning, Optimization and Data Science</h4>
+  <p class="text-muted" style="margin:0.25em 0;">
+    Ben Adcock<br>Bahman Gharesifard<br>Adam Oberman  </p>
+</div>        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Local Organizing Committee</h2>
+      <ul class="two-col-grid bare-list text-center committee profile mt-3">
+         <li>          
+          <div>
+  <img 
+    src="/images/people/bahman-gharesifard-g.png" 
+    alt="Bahman Gharesifard" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://gharesifard.github.io/">Bahman Gharesifard</a></h3>  
+  <span class="text-muted">(Conference Chair)<br>UCLA/Queen's University</span>
+</div>        </li>
+        <li>
+          <div>
+  <img 
+    src="/images/people/troy-day-g.png" 
+    alt="Troy Day" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://mast.queensu.ca/~tday/">Troy Day</a></h3>  
+  <span class="text-muted">Queen's University</span>
+</div>        
+        </li>       
+        <li>
+          <div>
+  <img 
+    src="/images/people/felicia-magpantay-g.png" 
+    alt="Felicia Magpantay" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://mast.queensu.ca/~magpantay/">Felicia Magpantay</a></h3>  
+  <span class="text-muted">Queen's University</span>
+</div>          
+        </li>        
+        <li>
+          <div>
+  <img 
+    src="/images/people/mazzone-giusy-g.png" 
+    alt="Giusy Mazzone" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://mast.queensu.ca/~gmazzone/">Giusy Mazzone</a></h3>  
+  <span class="text-muted">Queen's University</span>
+</div>        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Scientific Committee</h2>
+      <ul class="two-col-grid bare-list text-center committee profile mt-3">
+        <li>
+          <div>
+  <img 
+    src="/images/people/ben-adcock-g.png" 
+    alt="Ben Adcock" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://benadcock.org/">Ben Adcock</a></h3>  
+  <span class="text-muted">Simon Fraser University</span>
+</div>        </li>
+        <li>
+          <div>
+  <img 
+    src="/images/people/christoph-frei-g.png" 
+    alt="Christoph Frei" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://www.math.ualberta.ca/~cfrei/">Christoph Frei</a></h3>  
+  <span class="text-muted">University of Alberta</span>
+</div>          
+        </li>
+        <li>          
+          <div>
+  <img 
+    src="/images/people/bahman-gharesifard-g.png" 
+    alt="Bahman Gharesifard" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://gharesifard.github.io/">Bahman Gharesifard</a></h3>  
+  <span class="text-muted">UCLA/Queen's University</span>
+</div>        </li>
+        <li>
+          <div>
+  <img 
+    src="/images/people/tony-humphries-g.png" 
+    alt="Tony Humphries" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://www.math.mcgill.ca/humphries/">Tony Humphries</a></h3>  
+  <span class="text-muted">McGill University</span>
+</div>        </li>
+        <li>
+          <div>
+  <img 
+    src="/images/people/felicia-magpantay-g.png" 
+    alt="Felicia Magpantay" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://mast.queensu.ca/~magpantay/">Felicia Magpantay</a></h3>  
+  <span class="text-muted">Queen's University</span>
+</div>          
+        </li>
+        <li>
+          <div>
+  <img 
+    src="/images/people/catherine-sulem-g.png" 
+    alt="Cahterine Sulem" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="http://www.math.toronto.edu/sulem/">Cahterine Sulem</a></h3>  
+  <span class="text-muted">University of Toronto</span>
+</div>        </li>
+        <li>
+          <div>
+  <img 
+    src="/images/people/adam-oberman-g.png" 
+    alt="Adam Oberman" 
+    class="rounded-circle box-shadow">
+</div>
+<div class="committee-member mt-3 profile">
+  <h3 style="margin:0.25em 0;"><a href="https://www.adamoberman.net/">Adam Oberman</a></h3>  
+  <span class="text-muted">McGill University</span>
+</div>        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CAIMS•SCMAI Code of Conduct</h2>
+      <div class="px-md-3">
+        <p>This code of conduct was discussed with the CAIMS•SCMAI board during 2018/19. All CAIMS•SCMAI members and all participants of CAIMS•SCMAI supported activities are expected to adhere to the following ethical principles.</p>
+        <h3 id="equity-and-diversity">Equity and Diversity</h3>
+        <ol>
+          <li>
+            <p>Event organizers are committed to make CAIMS•SCMAI events productive and enjoyable for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, nationality, or religion.</p>
+          </li>
+          <li>
+            <p>Members and participants must behave professionally. Harassment and sexist, racist, or exclusionary comments or jokes are not appropriate. Harassment includes sustained disruption of talks or other events, inappropriate physical contact, sexual attention or innuendo, deliberate intimidation, or stalking. It also includes offensive comments related to gender, sexual orientation, disability, physical appearance, body size, race or religion, verbally, written, or online.</p>
+          </li>
+          <li>
+            <p>All communication and publications should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate.</p>
+          </li>
+        </ol>
+        <h3>Inclusion</h3>
+        <ol start="4">
+          <li>
+            <p>Members and participants use welcoming and inclusive language. Exclusionary comments or jokes, threats or violent language are not acceptable. We do not address others in an angry, intimidating, or demeaning manner.</p>
+          </li>
+          <li>
+            <p>We are open and understanding to younger participants and we are engaged in their mentorship.</p>
+          </li>
+          <li>
+            <p>Individuals that are asked to stop any inappropriate behaviour are expected to comply immediately.</p>
+          </li>
+        </ol>
+        <p>Actions, if needed:
+        Attendees of an event violating any of the rules 1.-6. may be asked to leave the event at the sole discretion of the organizers without a refund of any amount.</p>
+        <p>Any breach of the Code of Conduct should be reported to the</p>
+        <ul>
+          <li>Conference Chair,</li>
+          <li>CAIMS•SCMAI President,</li>
+          <li>CAIMS•SCMAI President Elect,</li>
+          <li>or any CAIMS•SCMAI board member.</li>
+        </ul>
+        <p>(This Code of Conduct is adapted, with permission, from the <a href="https://caims.ca/caims-blog/blog-post-2/">CAIMS•SCMAI Ethical Guidelines</a> published by Tomas Hillen, U Alberta, CAIMS•SCMAI President 2019-2021.)</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="px-md-3">
+        <p>Questions and comments can be sent to the local organizing committee at</p>
+        <div class="announcement">
+          <span>caims2024@queensu.ca</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+  /* Animate reveal theme images when they come into view with vanilla js */
+  const themeImages = document.querySelectorAll('.reveal-img-item');
+  const revealImages = function() {
+    themeImages.forEach(image => {
+      if (image.getBoundingClientRect().top - 20 < window.innerHeight) {
+        image.classList.add('reveal-image');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealImages);
+  
+</script>  
+  </div> <!-- div.main-container -->
+
+  <footer>
+    <div class="container">      
+      <div class="footer-icons">
+  <a href="https://caims.ca/">
+    <img class="header-logo" src="/images/logos/caims-logo.png" alt="MAA Logo">
+  </a>
+  <a href="https://www.facebook.com/CAIMS.SCMAI/">
+    <img class="header-logo" src="/images/logos/facebook-logo.svg" alt="Facebook Logo">
+  </a>
+  <a href="https://twitter.com/caims_scmai">
+    <img class="header-logo" src="/images/logos/twitter-logo.svg" alt="Twitter Logo">
+  </a>
+  <a href="https://www.youtube.com/channel/UCeVUnfXOJhQBszxxJ8rJSDQ">
+    <img class="header-logo" src="/images/logos/youtube-logo.svg" alt="YouTube Logo">
+  </a>
+  <a href="http://www.fields.utoronto.ca/">
+    <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Fields Logo">
+  </a>
+</div>      
+    </div>
+  </footer>
+  <div style="display:none">Designed by <a href="https://geneseo.edu/~aguilar">Cesar Aguilar</a></div>
+  </div> <!-- div.main-wrapper -->
+
+  <script>
+    // Removes session-message div after 2 seconds
+    
+    // Add event listener when scrolling to change navigation background
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');      
+      const scrollPos = window.scrollY;
+      if (scrollPos > 0) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+    
+  </script>
+  <script src="/js/main.js?v=1.03"></script>
+  </body>
+
+  </html>
