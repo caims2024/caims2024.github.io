@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+  <link rel="stylesheet" href="https://caims2024.org/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://caims2024.org/css/all.min.css">
+      <link rel="stylesheet" href="https://caims2024.org/css/main.min.css?v=1.39">
+      <link rel="stylesheet" href="https://caims2024.org/css/admin-widgets.css?v=1.00">
+  <script src="https://caims2024.org/js/widgets.js?v=1.00"></script>
+  <script src="https://caims2024.org/js/jquery-3.5.0.min.js"></script>
+      <title>CAIMS 2024 | Schedule</title>
+</head>
+<body>
+  <div class="main-wrapper"><button class="nav-button" id="nav-toggler" aria-label="Main menu">
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+</button>
+<nav class="main-navigation overlay-nav" id="nav-menu">
+  <div class="d-flex justify-content-between">
+    <div class="fields-logo-container m-2 desktop-hidden">
+      <a href="http://www.fields.utoronto.ca/" class="p-0">
+        <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <button id="main-nav-close-btn" class="nav-close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div id="mobile-meeting-btn-wrapper">
+    <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2 py-1">
+      <a href="/" rel="home" class="p-0">
+        <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <span class="nav-title">2024 CAIMS•SCMAI<br>Annual Meeting</span>    
+  </div>
+  <div class="container d-flex align-items-center justify-content-around">
+    <div class="mobile-hidden me-4">
+      <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2">
+        <a href="/" rel="home" class="p-0">
+          <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>      
+    </div>
+    <ul class="main-menu pb-5 pb-md-0">
+              <li >
+          <a href="https://caims2024.org" 
+            class="a-menu ">
+            <span>Home</span>          </a>
+                  </li>
+              <li >
+          <a href="https://caims2024.org/about" 
+            class="a-menu ">
+            <span>About</span>          </a>
+                  </li>
+              <li >
+          <a href="https://caims2024.org/registration" 
+            class="a-menu ">
+            <span>Registration</span>          </a>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu active-menu-item ">
+            <span>Program</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="https://caims2024.org/schedule" class="active-menu-item">
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-calendar-day"></i>
+                    <span class="ms-3">Schedule</span>
+                  </div>
+                  <div class="submenu-desc">Schedule at a Glance</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="https://caims2024.org/program" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-book-open"></i>
+                    <span class="ms-3">Program</span>
+                  </div>
+                  <div class="submenu-desc">Program at a Glance, Technical Program, My CAIMS</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="https://caims2024.org/minisymposia" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-chalkboard-user"></i>
+                    <span class="ms-3">Minisymposia</span>
+                  </div>
+                  <div class="submenu-desc">Minisymposia, Organizers</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Places</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="https://caims2024.org/travel" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-location-dot"></i>
+                    <span class="ms-3">Travel</span>
+                  </div>
+                  <div class="submenu-desc">Travel, Accommodations, Kingston tourism</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="https://caims2024.org/campus" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-building"></i>
+                    <span class="ms-3">Campus</span>
+                  </div>
+                  <div class="submenu-desc">Campus key locations</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li >
+          <a href="https://caims2024.org/support" 
+            class="a-menu ">
+            <span>Support</span>          </a>
+                  </li>
+          </ul>
+    <div class="mobile-hidden ms-4">
+      <div class="me-0 ms-2 fields-logo-container d-flex">
+        <a href="http://www.fields.utoronto.ca/" class="p-0">
+          <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav> <header class="text-white d-flex flex-column justify-content-end align-items-center">  
+  <div class="header-overlay d-flex flex-column justify-content-end">
+      <div class="container mb-4">
+      <h1><span>Schedule</span></h1>       
+    </div>
+      
+  </div>
+</header>
+<div class="main-container">
+<main>
+  <div class="mx-auto mw-1400 d-flex justify-content-center">
+
+    <div class="my-5" style="overflow-x:auto;">
+      <div class="d-inline-flex border border-1 fs-8 fs-sm-9" style="background:rgba(0,0,0,0.05);">
+    <div class="day">
+      <div class="day-title fw-bold px-3 border-bottom border-1 bg-warning d-flex flex-column justify-content-center" style="height:60px;">        
+        <div>Time</div>
+      </div>
+      <div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">08:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">08:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">08:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">08:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">09:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">09:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">09:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">09:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">10:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">10:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">10:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">10:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">11:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">11:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">11:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">11:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">12:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">12:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">12:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">12:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">13:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">13:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">13:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">13:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">14:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">14:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">14:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">14:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">15:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">15:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">15:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">15:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">16:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">16:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">16:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">16:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">17:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">17:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">17:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">17:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">18:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">18:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">18:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">18:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">19:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">19:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">19:30</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">19:45</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">20:00</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(0,0,0,0.1)">20:15</div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div><div class="time text-center border-bottom border-right" style="height:20px;background:rgba(255,255,255,0.5)"></div>    </div>
+        <div class="day border border-1" style="width:240px;">
+      <div class="day-title fw-bold text-center border-bottom border-1 text-white d-flex flex-column justify-content-center" 
+          style="background:darkgreen;height:60px;">
+        <div>DAY 0</div>
+        <span class="text-uppercase">Sunday, June 23</span>
+      </div>
+                <div class="event border-bottom border-1" style="height:1920px;background:inherit;"></div>        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#f599b8">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-wine-glass"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Welcome Reception and Registration                              </span>
+                          </div>
+            <div class="time">
+                            16:00 - 18:00                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+            </div>
+        <div class="day border border-1" style="width:240px;">
+      <div class="day-title fw-bold text-center border-bottom border-1 text-white d-flex flex-column justify-content-center" 
+          style="background:darkgreen;height:60px;">
+        <div>DAY 1</div>
+        <span class="text-uppercase">Monday, June 24</span>
+      </div>
+                        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 80px;overflow-y:scroll;background:#53e0d84d">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Registration                              </span>
+                          </div>
+            <div class="time">
+                            08:00 - 08:20                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 40px;overflow-y:scroll;background:#f2adad">
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Opening Remarks                              </span>
+                          </div>
+            <div class="time">
+                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/3">Jeff Calder</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            08:30 - 09:15                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            09:15 - 10:00                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#f6ddef">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/5">Parallel Minisymposia</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            10:00 - 12:00                          </div>
+            <div class="location">Stirling, Chernoff</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 360px;overflow-y:scroll;background:#f6efb1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Lunch                              </span>
+                          </div>
+            <div class="time">
+                            12:00 - 13:30                          </div>
+            <div class="location">Leonard Hall</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#f6ddef">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/7">Parallel Minisymposia</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            13:30 - 15:30                          </div>
+            <div class="location">Stirling, Chernoff</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            15:30 - 16:15                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/9">Susanna Terracini</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            16:15 - 17:00                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+        <div class="event border-bottom border-1" style="height:120px;background:rgba(0,0,0,0.3);"></div>        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#f3cc92">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-info-circle"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/10">NSERC Session &amp; Contributed Sessions</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            17:30 - 18:30                          </div>
+            <div class="location">Biosciences Complex</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#e5e6e7">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-image"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/11">Poster Session</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            18:30 - 19:30                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+            </div>
+        <div class="day border border-1" style="width:240px;">
+      <div class="day-title fw-bold text-center border-bottom border-1 text-white d-flex flex-column justify-content-center" 
+          style="background:darkgreen;height:60px;">
+        <div>DAY 2</div>
+        <span class="text-uppercase">Tuesday, June 25</span>
+      </div>
+                        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 120px;overflow-y:scroll;background:#53e0d84d">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Registration                              </span>
+                          </div>
+            <div class="time">
+                            08:00 - 08:30                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#ead1d1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-award"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/12">CAIMS Industry Prize</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            08:30 - 09:15                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#ead1d1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-award"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/13">CAIMS Early<br />Career Prize</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            09:15 - 10:00                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 120px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            10:00 - 10:30                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/15">Sebastian Reich</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            10:30 - 11:15                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/16">Jim Gatheral</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            11:15 - 12:00                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#f6efb1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Lunch<br />(available until 13:30)                              </span>
+                          </div>
+            <div class="time">
+                            12:00 - 13:00                          </div>
+            <div class="location">Leonard Hall</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#d9e2e6">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-university"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  CAIMS Annual<br />General Meeting                              </span>
+                          </div>
+            <div class="time">
+                            13:00 - 14:00                          </div>
+            <div class="location">Chernoff Hall Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 360px;overflow-y:scroll;background:#f6ddef">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/19">Parallel Minisymposia and Contributed Sessions</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            14:00 - 15:30                          </div>
+            <div class="location">Stirling, Chernoff</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            15:30 - 16:15                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/21">Alexander Anderson</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            16:15 - 17:00                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+        <div class="event border-bottom border-1" style="height:120px;background:rgba(0,0,0,0.3);"></div>        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#f3cc92">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-users"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/22">EDII Panel</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            17:30 - 18:30                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#f3cc92">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-users"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/23">Industry Panel</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            18:30 - 19:30                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+            </div>
+        <div class="day border border-1" style="width:240px;">
+      <div class="day-title fw-bold text-center border-bottom border-1 text-white d-flex flex-column justify-content-center" 
+          style="background:darkgreen;height:60px;">
+        <div>DAY 3</div>
+        <span class="text-uppercase">Wednesday, June 26</span>
+      </div>
+                        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 120px;overflow-y:scroll;background:#53e0d84d">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Registration                              </span>
+                          </div>
+            <div class="time">
+                            08:00 - 08:30                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#ead1d1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-award"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/24">CAIMS Research Prize</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            08:30 - 09:15                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            09:15 - 10:00                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#f6ddef">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/26">Parallel Minisymposia</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            10:00 - 12:00                          </div>
+            <div class="location">Stirling, Chernoff</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#f6efb1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Lunch<br />(available until 13:30)                              </span>
+                          </div>
+            <div class="time">
+                            12:00 - 13:00                          </div>
+            <div class="location">Leonard Hall</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 120px;overflow-y:scroll;background:#ead1d1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-award"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/37">CAIMS Doctoral Dissertation Award</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            13:00 - 13:30                          </div>
+            <div class="location">Stirling Hall Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#f6ddef">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/28">Parallel Minisymposia</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            13:30 - 15:30                          </div>
+            <div class="location">Stirling, Chernoff</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            15:30 - 16:15                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/30">Annalisa Quaini</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            16:15 - 17:00                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+        <div class="event border-bottom border-1" style="height:120px;background:rgba(0,0,0,0.3);"></div>        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 240px;overflow-y:scroll;background:#bdf2bd">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Ram Murty<br />(Public Lecture)                              </span>
+                          </div>
+            <div class="time">
+                            17:30 - 18:30                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#eb9078">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Banquet                              </span>
+                          </div>
+            <div class="time">
+                            18:30 - 20:30                          </div>
+            <div class="location">Ban Righ Hall</div>
+          </div>
+        </div>
+            </div>
+        <div class="day border border-1" style="width:240px;">
+      <div class="day-title fw-bold text-center border-bottom border-1 text-white d-flex flex-column justify-content-center" 
+          style="background:darkgreen;height:60px;">
+        <div>DAY 4</div>
+        <span class="text-uppercase">Thursday, June 27</span>
+      </div>
+                        <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 120px;overflow-y:scroll;background:#53e0d84d">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Registration                              </span>
+                          </div>
+            <div class="time">
+                            08:00 - 08:30                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#e0f4cf">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/33">Marta Lewicka</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            08:30 - 09:15                          </div>
+            <div class="location">Biosciences Auditorium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 180px;overflow-y:scroll;background:#d0c5c1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Coffee Break                              </span>
+                          </div>
+            <div class="time">
+                            09:15 - 10:00                          </div>
+            <div class="location">Biosciences Atrium</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 480px;overflow-y:scroll;background:#f6ddef">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  <a href="https://caims2024.org/program/program_glance/35">Parallel Minisymposia and Contributed Sessions</a>
+                              </span>
+                          </div>
+            <div class="time">
+                            10:00 - 12:00                          </div>
+            <div class="location">Stirling, Chernoff</div>
+          </div>
+        </div>
+                <div class="event d-flex align-items-center border-bottom border-1 ps-3"
+             style="position:relative;height: 360px;overflow-y:scroll;background:#f6efb1">
+                      <div style="font-size:1.1rem;position:absolute;top:8px;right:8px;color:rgba(0,0,0,0.7);">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+                    <div style="font-size:0.8rem;">
+            <div class="title">
+                            <span class="text-uppercase fw-bold">
+                                  Lunch                              </span>
+                          </div>
+            <div class="time">
+                            12:00 - 13:30                          </div>
+            <div class="location">Leonard Hall</div>
+          </div>
+        </div>
+            </div>
+      </div>    </div>
+
+  </div>
+</main>  
+  </div> <!-- div.main-container -->
+
+  <footer>
+    <div class="container">      
+      <div class="footer-icons">
+  <a href="https://caims.ca/">
+    <img class="header-logo" src="/images/logos/caims-logo.png" alt="MAA Logo">
+  </a>
+  <a href="https://www.facebook.com/CAIMS.SCMAI/">
+    <img class="header-logo" src="/images/logos/facebook-logo.svg" alt="Facebook Logo">
+  </a>
+  <a href="https://twitter.com/caims_scmai">
+    <img class="header-logo" src="/images/logos/twitter-logo.svg" alt="Twitter Logo">
+  </a>
+  <a href="https://www.youtube.com/channel/UCeVUnfXOJhQBszxxJ8rJSDQ">
+    <img class="header-logo" src="/images/logos/youtube-logo.svg" alt="YouTube Logo">
+  </a>
+  <a href="http://www.fields.utoronto.ca/">
+    <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Fields Logo">
+  </a>
+</div>      
+    </div>
+  </footer>
+  <div style="display:none">Designed by <a href="https://geneseo.edu/~aguilar">Cesar Aguilar</a></div>
+  </div> <!-- div.main-wrapper -->
+
+  <script>
+    // Removes session-message div after 2 seconds
+    
+    // Add event listener when scrolling to change navigation background
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');      
+      const scrollPos = window.scrollY;
+      if (scrollPos > 0) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+    
+  </script>
+  <script src="https://caims2024.org/js/main.js?v=1.03"></script>
+  </body>
+
+  </html>
