@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/main.css?v=1.39">
+  <link rel="stylesheet" href="/css/admin-widgets.css?v=1.00">
+  <script src="/js/widgets.js?v=1.00"></script>
+  <script src="/js/jquery-3.5.0.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/mathjax-config.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <title>CAIMS 2024 | Minisymposia</title>
+</head>
+<body>
+  <div class="main-wrapper"><button class="nav-button" id="nav-toggler" aria-label="Main menu">
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+</button>
+<nav class="main-navigation overlay-nav" id="nav-menu">
+  <div class="d-flex justify-content-between">
+    <div class="fields-logo-container m-2 desktop-hidden">
+      <a href="http://www.fields.utoronto.ca/" class="p-0">
+        <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <button id="main-nav-close-btn" class="nav-close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div id="mobile-meeting-btn-wrapper">
+    <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2 py-1">
+      <a href="/" rel="home" class="p-0">
+        <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <span class="nav-title">2024 CAIMS•SCMAI<br>Annual Meeting</span>    
+  </div>
+  <div class="container d-flex align-items-center justify-content-around">
+    <div class="mobile-hidden me-4">
+      <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2">
+        <a href="/" rel="home" class="p-0">
+          <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>      
+    </div>
+    <ul class="main-menu pb-5 pb-md-0">
+              <li >
+          <a href="/" 
+            class="a-menu ">
+            <span>Home</span>          </a>
+                  </li>
+              <li >
+          <a href="/about.html" 
+            class="a-menu ">
+            <span>About</span>          </a>
+                  </li>
+              <li >
+          <a href="/registration.html" 
+            class="a-menu ">
+            <span>Registration</span>          </a>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu active-menu-item ">
+            <span>Program</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="/schedule.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-calendar-day"></i>
+                    <span class="ms-3">Schedule</span>
+                  </div>
+                  <div class="submenu-desc">Schedule at a Glance</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/program/index.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-book-open"></i>
+                    <span class="ms-3">Program</span>
+                  </div>
+                  <div class="submenu-desc">Program at a Glance, Technical Program, My CAIMS</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/minisymposia.html" class="active-menu-item">
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-chalkboard-user"></i>
+                    <span class="ms-3">Minisymposia</span>
+                  </div>
+                  <div class="submenu-desc">Minisymposia, Organizers</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Places</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="/travel.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-location-dot"></i>
+                    <span class="ms-3">Travel</span>
+                  </div>
+                  <div class="submenu-desc">Travel, Accommodations, Kingston tourism</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/campus.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-building"></i>
+                    <span class="ms-3">Campus</span>
+                  </div>
+                  <div class="submenu-desc">Campus key locations</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li >
+          <a href="/support.html" 
+            class="a-menu ">
+            <span>Support</span>          </a>
+                  </li>
+          </ul>
+    <div class="mobile-hidden ms-4">
+      <div class="me-0 ms-2 fields-logo-container d-flex">
+        <a href="http://www.fields.utoronto.ca/" class="p-0">
+          <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav> <header class="text-white d-flex flex-column justify-content-end align-items-center">  
+  <div class="header-overlay d-flex flex-column justify-content-end">
+      <div class="container mb-4">
+      <h1><span>Minisymposia</span></h1>       
+    </div>
+      
+  </div>
+</header>
+<div class="main-container">
+<main>
+  <div class="container">
+    <section>
+      <h2>Minisymposia</h2>
+      <ol class="mt-4">
+                            <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Mathematical Modelling of Behaviour</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Iain Moyles,
+                    York University                  </li>
+                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Modelling heterogeneity in ecology, epidemiology, and evolution</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Tyler Meadows,
+                    Queen's University                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Sicheng Zhao,
+                    Queen's University                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Advancing Health and Medicine through Scientific Computing: Mechanistic Modelling, Machine Learning, and Quantitative Systems Pharmacology</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Suzan Farhang-Sardroodi,
+                    Department of Pharmacology and Toxicology, University of Toronto                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Kathleen Wilkie,
+                    Department of Mathemstics, Toronto Metropolitan University                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Topics in Cell Biology</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Nat Kendal-Freedman,
+                    University of Waterloo                  </li>
+                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Pattern formation for novel reaction-diffusion systems in the fully nonlinear regime</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Fanze Kong,
+                    University of British Columbia                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Michael Ward,
+                    University of British Columbia                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Computational Neuroscience</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Sue Ann Campbell,
+                    University of Waterloo                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Wilten Nicola,
+                    University of Calgary                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">New challenges and new faces in mathematical ecology</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Frithjof Lutscher,
+                    University of Ottawa                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Rebecca Tyson,
+                    University of British Columbia                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Infectious disease modelling for small jurisdictions</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Amy Hurford,
+                    Memorial University                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Lisa Kanary,
+                    Public Health Agency of Canada                  </li>
+                                  <li class="ms-2 mb-1">
+                    Michael Li,
+                    Public Health Agency of Canada                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                  
+                            <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Advancing Scientific computing through recent High-Performance Computing paradigms</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Raymond Spiteri,
+                    University of Saskatchewan                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Mahdi Moayeri,
+                    University of Saskatchewan                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Exponential integrators for differential equations</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Siqi Wei,
+                    University of Saskatchewan                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Raymond Spiteri,
+                    University of Saskatchewan                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Development of robust high-order methods for partial differential equations</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Anita Gjesteland,
+                    University of Waterloo, Department of Applied Mathematics                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Alex Bercik,
+                    University of Toronto, Institute for Aerospace Studies                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                  
+                            <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">AI for Enhancing Public Health and Healthcare in Canada</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Chapin Korosec,
+                    Department of Mathematics and Statistics, York University                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Suzan Farhang-Sardroodi,
+                    Department of Pharmacology &amp; Toxicology, University of Toronto                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Recent Progress on the Intersections of Nonlinear Dynamics, Control, Learning, and Optimization</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Bahman Gharesifard,
+                    UCLA/Queen's University                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Maria Teresa Chiri,
+                    Queen's University                  </li>
+                                  <li class="ms-2 mb-1">
+                    Kexue Zhang,
+                    Queen's University                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Transforming Optimization Problems: Geometric, Statistical, and Physical Perspectives</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Greg van Anders,
+                    Queen's University                  </li>
+                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Learning and control for robotics systems</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Gennaro Notomista,
+                    University of Waterloo                  </li>
+                </ul>
+              </div>
+                          </div>
+          </li>
+                  
+                            <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Financial Mathematics</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Christoph Frei,
+                    University of Alberta                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Mark Reesor,
+                    Wilfrid Laurier University                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                  
+                            <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">25th Canadian Symposium on Fluid Dynamics</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Giusy Mazzone,
+                    Queen's University                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Ian Frigaard,
+                    University of British Columbia                  </li>
+                                  <li class="ms-2 mb-1">
+                    Nicholas Kevlahan,
+                    McMaster University                  </li>
+                                  <li class="ms-2 mb-1">
+                    Seyed Taghavi,
+                    Université Laval                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                  
+                            <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Celestial Mechanics: Old and New in Dynamical Systems</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Manuele Santoprete,
+                    Wilfrid Laurier University                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Cristina Stoica,
+                    Wilfrid Laurier University                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                    <li class="mb-3 pb-3">
+            <div class="mb-2 px-2 py-2 rounded" style="background:#f4eeef;">
+              <span class="h5 mb-1">Delay Differential Equations and Their Applications</span>
+            </div>
+            <div class="ms-3">
+              <div>
+                <h5 class="fw-bold">Organizer</h5>
+                <ul>
+                  <li class="ms-2">
+                    Xingfu Zou,
+                    University of Western Ontario                  </li>
+                </ul>
+              </div>
+                            <div>
+                <h5 class="fw-bold mt-2">Co-organizers</h5>
+                <ul>
+                                  <li class="ms-2 mb-1">
+                    Yuming Chen,
+                    Wilfid Laurier University                  </li>
+                                  <li class="ms-2 mb-1">
+                    Lin Wang,
+                    University of New Brunswick                  </li>
+                                </ul>
+              </div>
+                          </div>
+          </li>
+                  
+              </ol>
+    </section>
+  </div>
+</main>  
+  </div> <!-- div.main-container -->
+
+  <footer>
+    <div class="container">      
+      <div class="footer-icons">
+  <a href="https://caims.ca/">
+    <img class="header-logo" src="/images/logos/caims-logo.png" alt="MAA Logo">
+  </a>
+  <a href="https://www.facebook.com/CAIMS.SCMAI/">
+    <img class="header-logo" src="/images/logos/facebook-logo.svg" alt="Facebook Logo">
+  </a>
+  <a href="https://twitter.com/caims_scmai">
+    <img class="header-logo" src="/images/logos/twitter-logo.svg" alt="Twitter Logo">
+  </a>
+  <a href="https://www.youtube.com/channel/UCeVUnfXOJhQBszxxJ8rJSDQ">
+    <img class="header-logo" src="/images/logos/youtube-logo.svg" alt="YouTube Logo">
+  </a>
+  <a href="http://www.fields.utoronto.ca/">
+    <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Fields Logo">
+  </a>
+</div>      
+    </div>
+  </footer>
+  <div style="display:none">Designed by <a href="https://geneseo.edu/~aguilar">Cesar Aguilar</a></div>
+  </div> <!-- div.main-wrapper -->
+
+  <script>
+    // Removes session-message div after 2 seconds
+    
+    // Add event listener when scrolling to change navigation background
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');      
+      const scrollPos = window.scrollY;
+      if (scrollPos > 0) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+    
+  </script>
+  <script src="/js/main.js?v=1.03"></script>
+  </body>
+
+  </html>
