@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+      <link rel="stylesheet" href="/css/main.min.css?v=1.39">
+      <link rel="stylesheet" href="/css/admin-widgets.css?v=1.00">
+  <script src="/js/widgets.js?v=1.00"></script>
+  <script src="/js/jquery-3.5.0.min.js"></script>
+      <title>CAIMS 2024 | Travel</title>
+</head>
+<body>
+  <div class="main-wrapper"><button class="nav-button" id="nav-toggler" aria-label="Main menu">
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+  <div class="burger-slice"></div>
+</button>
+<nav class="main-navigation overlay-nav" id="nav-menu">
+  <div class="d-flex justify-content-between">
+    <div class="fields-logo-container m-2 desktop-hidden">
+      <a href="http://www.fields.utoronto.ca/" class="p-0">
+        <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <button id="main-nav-close-btn" class="nav-close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div id="mobile-meeting-btn-wrapper">
+    <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2 py-1">
+      <a href="/" rel="home" class="p-0">
+        <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+      </a>
+    </div>
+    <span class="nav-title">2024 CAIMS•SCMAI<br>Annual Meeting</span>    
+  </div>
+  <div class="container d-flex align-items-center justify-content-around">
+    <div class="mobile-hidden me-4">
+      <div class="me-0 ms-2 caims-logo-container d-flex align-items-center rounded-2">
+        <a href="/" rel="home" class="p-0">
+          <img class="header-logo" src="/images/logos/caims-leaf-logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>      
+    </div>
+    <ul class="main-menu pb-5 pb-md-0">
+              <li >
+          <a href="/" 
+            class="a-menu ">
+            <span>Home</span>          </a>
+                  </li>
+              <li >
+          <a href="/about.html" 
+            class="a-menu ">
+            <span>About</span>          </a>
+                  </li>
+              <li >
+          <a href="/registration.html" 
+            class="a-menu ">
+            <span>Registration</span>          </a>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu ">
+            <span>Program</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="/schedule.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-calendar-day"></i>
+                    <span class="ms-3">Schedule</span>
+                  </div>
+                  <div class="submenu-desc">Schedule at a Glance</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/program/index.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-book-open"></i>
+                    <span class="ms-3">Program</span>
+                  </div>
+                  <div class="submenu-desc">Program at a Glance, Technical Program, My CAIMS</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/minisymposia.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-chalkboard-user"></i>
+                    <span class="ms-3">Minisymposia</span>
+                  </div>
+                  <div class="submenu-desc">Minisymposia, Organizers</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li class="has-submenu">
+          <a href="" 
+            class="a-menu active-menu-item ">
+            <span>Places</span><span class="submenu-icon"></span>          </a>
+                      <ul class="nav-submenu">
+                              <li>
+                  <a href="/travel.html" class="active-menu-item">
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-location-dot"></i>
+                    <span class="ms-3">Travel</span>
+                  </div>
+                  <div class="submenu-desc">Travel, Accommodations, Kingston tourism</div>
+                  </a>                  
+                </li>
+                              <li>
+                  <a href="/campus.html" >
+                  <div class="d-flex align-items-center">
+                    <i class="menu-icon fa-solid fa-building"></i>
+                    <span class="ms-3">Campus</span>
+                  </div>
+                  <div class="submenu-desc">Campus key locations</div>
+                  </a>                  
+                </li>
+                          </ul>
+                  </li>
+              <li >
+          <a href="/support.html" 
+            class="a-menu ">
+            <span>Support</span>          </a>
+                  </li>
+          </ul>
+    <div class="mobile-hidden ms-4">
+      <div class="me-0 ms-2 fields-logo-container d-flex">
+        <a href="http://www.fields.utoronto.ca/" class="p-0">
+          <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Home" style="width:100%;height:100%;">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav> <header class="text-white d-flex flex-column justify-content-end align-items-center">  
+  <div class="header-overlay d-flex flex-column justify-content-end">
+      <div class="container mb-4">
+      <h1><span>Travel</span></h1>       
+    </div>
+      
+  </div>
+</header>
+<div class="main-container"><main>
+  <div class="container"> 
+
+    <section>
+      <h2>Accommodations</h2>
+      <div class="px-md-3">
+        <div class="generic-card">
+          <h3>Queen's University Accommodations</h3>
+          <p>These are on-campus accommodations. The prices listed are for two-bedroom units. The bedrooms are connected by a shared bathroom and each bedroom has a double bed. Maximum occupancy is 4 people (two per bedroom). A limited number of units are reserved for the conference.</p>
+
+          <p><strong>Special rate:</strong> &dollar;124/night or  &dollar;129/night for a 2-bedroom unit</p>
+
+          <p><strong>Book by:</strong> June 7</p>
+          
+          <p><span class="btn btn-success p-3"><i class="fa-solid fa-hotel me-2"></i> Reserve Now</span></p>
+        </div>
+        <div class="generic-card mt-4">
+          <h3>Kingston Market Square Hotel</h3>
+          <p>This downtown hotel is a 13-minute walk to the Biosciences Complex. A limited number of rooms are reserved for the conference.</p>
+
+          <p><strong>Special rate:</strong> &dollar;249/night</p>
+
+          <p><strong>Book by:</strong> May 24</p>
+
+          <p><span class="btn btn-success p-3"><i class="fa-solid fa-hotel me-2"></i> Reserve Now</span></p>
+        </div>
+
+        <div class="generic-card mt-4">
+          <h3>Holiday Inn Kingston Waterfront</h3>
+
+        <p>This downtown hotel is 19-minute walk to the Biosciences Complex. A limited number of rooms are reserved for the conference.</p>
+
+        <p><strong>Special rate:</strong> &dollar;229/night</p>
+        
+        <p><strong>Book by:</strong> May 23</p>
+
+        <p>Additional instructions once on hotel website:</p>
+        <ol>          
+          <li>Click "BOOK NOW" located in the top right hand corner - this will slide the page down to a search for dates. OR, scroll down to this section.</li>
+          <li>Enter in the group dates - under check in, select the dates on the calendar. By choosing these dates, you will see the group code generated just below the date information. Hit SEARCH.</li>
+          <li>The rooms available will open with the option to select a room type for booking.</li>
+          <li>Hit select rate; it will then take you to the reserve page, where you will fill out the appropriate information.</li>
+        </ol>
+
+        <p><span class="btn btn-success p-3"><i class="fa-solid fa-hotel me-2"></i> Reserve Now</span></p>
+                
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Getting Here</h2>
+      <div class="px-md-3">
+        <h3>VIA Rail</h3>
+        <p>Kingston is a stop on the VIA Rail <a href="https://en.wikipedia.org/wiki/Quebec_City%E2%80%93Windsor_Corridor_(Via_Rail)">Quebec City-Windsor corridor</a> and trains arrive in and depart from Kingston every day. The train station is located at 1800 John Counter Blvd, a 10 minute drive from Queen's University and downtown Kingston. Visit the <a href="https://www.viarail.ca/en">VIA Rail website</a> for schedules and fares.</p>
+                
+        <h3>Bus</h3>
+        <p>The Kingston Bus Terminal is located at 1175 John Counter Blvd, a 10 minute drive from Queen's University and downtown Kingston. Multiple routes operate to and from Kingston with connections to cities such as Toronto, Montreal, Ottawa, Windsor, Mississauga and more.  Bus carriers serving Kingston include <a href="https://ca.megabus.com/">Megabus</a> and <a href="https://www.flixbus.com/">Flixbus</a>. Some Megabus routes will also stop at the Queen's campus. There are also regularly scheduled Megabus routes that go from Toronto Pearson airport to the Kingston Bus Terminal and/or Queen's.</p>
+
+        <h3>Air Canada Flight Discount Code</h3>
+        <p><strong>For Air Canada round-trip flights from anywhere to Toronto/Montreal/Ottawa between 17 June - 4 July 2024, the discount code is no longer available.</strong>
+        
+        <h3>Google Map</h3>
+        <p>Google map of the Kingston area:</p>
+        <div class="d-flex justify-content-center my-5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1464263.6276690892!2d-78.95560207051835!3d44.20933398181553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab0674408ea9%3A0x76a5497715d6d9ea!2sKingston%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1691021999083!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>About Kingston</h2>
+      <p class="px-md-3">Kingston, Ontario, is a vibrant and historic city located at the eastern end of Lake Ontario. With its picturesque waterfront, charming downtown, and numerous parks and green spaces, the city offers a high quality of life for its residents and attracts visitors from far and wide. Home to prestigious institutions such as Queen's University and the Royal Military College of Canada, Kingston enjoys a dynamic academic community. Additionally, its proximity to the beautiful Thousand Islands region provides ample opportunities for outdoor recreation and exploration. Kingston is home to Ontario's oldest public market and a very live music scene in a bustling downtown filled with restaurants and outdoor patios.</p>      
+    </section>
+
+  </div>
+
+  <div class="my-5">
+    <div class="carousel">
+      <ul class="slides">
+        <input type="radio" name="radio-buttons" id="img-1" checked />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="/images/places/market-patio-view2.jpeg">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-3" class="prev-slide">                  
+              <i class="fa-solid fa-chevron-left"></i>
+            </label>
+            <label for="img-2" class="next-slide">                  
+              <i class="fa-solid fa-chevron-right"></i>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-2" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="/images/places/lake-ontario2.jpeg">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-1" class="prev-slide">
+            <i class="fa-solid fa-chevron-left"></i>
+            </label>
+            <label for="img-3" class="next-slide">
+            <i class="fa-solid fa-chevron-right"></i>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-3" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <img src="/images/places/fort-henry-1.jpeg">
+          </div>
+          <div class="carousel-controls">
+            <label for="img-2" class="prev-slide">
+            <i class="fa-solid fa-chevron-left"></i>
+            </label>
+            <label for="img-1" class="next-slide">
+            <i class="fa-solid fa-chevron-right"></i>
+            </label>
+          </div>
+        </li>
+        <div class="carousel-dots">
+          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container my-5">
+
+    <section>
+        <h2>Discount Codes</h2>
+        <div class="px-md-3">
+
+          <p>Please note that information about promos or discounts contained on this website does not constitute endorsement or recommendation.</p>
+          
+          <div class="generic-card">          
+            <div><a href="https://ahoyrentals.com/">Ahoy Rentals</a></div>
+            <div>Discount Code: CAIMS2024</div>
+            <div>Dates: June 16-28</div>
+            <div>
+              This applies to hourly and full-day rentals for the following Items:
+                <ul>
+                  <li>Kayak Rentals</li>
+                  <li>Canoe Rentals</li>
+                  <li>SUP Rentals</li>
+                  <li>Bike Rentals (Hybrid,Cruising, Kids & EBikes)</li>
+                  <li>Kingston Bike Tours</li>
+                </ul>
+              </div>
+          </div>
+
+        </div>
+            
+      </section>
+
+  </div>
+
+  <section class="attractions">
+      <ul class="bare-list">
+        <li>
+          <div>
+            <img src="/images/places/fort-henry-1.jpeg" width="360" height="180">
+          </div>
+          <h3 class="my-3">Fort Henry</h3>
+          <p class="mw-500 mx-auto">Fort Henry, a national historic site, is a 19th-century British military fortress a short bike ride from downtown Kingston. Visitors to the fort enter the realm of 19th century military life, experience guided tours, scenic views, musical performances and precision military demonstrations by the Fort Henry Guard.</p>
+          <a href="https://www.forthenry.com/"><p class="text-center btn btn-info py-2">forthenry.com</p></a>
+        </li>
+        <li>
+          <div>
+            <img src="/images/places/castle2.jpeg" width="360" height="180">
+          </div>
+          <h3 class="my-3">1000 Islands</h3>
+          <p class="mw-500 mx-auto">The 1000 Islands constitute an archipelago of 1,864 islands that straddles the Canada-US border in the Saint Lawrence River.  Cruise from downtown Kingston into the heart of the Admiralty Islands, home to the highest concentration of small cottage islands and picturesque channels in the 1000 Islands.</p>
+          <a href="https://www.1000islandscruises.ca/"><p class="text-center btn btn-info py-2">1000islandscruises.ca</p></a>
+        </li>
+        <li>
+          <div>
+            <img src="/images/places/penetentiary2.jpeg" width="360" height="180">
+          </div>
+          <h3 class="my-3">Kingston Penitentiary</h3>
+          <p class="mw-500 mx-auto">The Kingston Penitentiary is a former maximum security prison a short walk from Queen's University. Guided tours give guests the opportunity to visit many of the highlights of the institution, including the North Gate, a cell range, the canteen and social services area to hear about the 1971 riot, and more.</p>
+          <a href="https://www.kingstonpentour.com/"><p class="text-center btn btn-info py-2">kingstonpentour.com</p></a>
+        </li>
+      </ul>
+  </section>
+
+  <section class="d-flex justify-content-around flex-wrap align-items-center" style="padding:5em 0;">
+    <div class="my-3">
+      <a href="https://www.visitkingston.ca/"><img src="/images/logos/visit-kingston.png" alt="Visit Kingston Logo" width="157" height="52"></a>
+    </div>
+    <div class="my-3">
+      <a href="https://www.1000islandscruises.ca/"><img src="/images/logos/1000-cruises.png" alt="1000 Island Cruises Logo" width="83" height="128"></a>
+    </div>    
+    <div class="my-3">
+      <a href="https://www.cityofkingston.ca/"><img src="/images/logos/city-kingston.png" alt="City of  Kingston Logo" width="114" height="109"></a>
+    </div>
+    <div class="my-3">
+      <a href="https://downtownkingston.ca/"><img src="/images/logos/downtown-kingston.png" alt="Downtown Kingston Logo" width="150" height="100"></a>
+    </div>
+    <div class="my-3" style="background:#17463f;">
+      <a href="http://kingstonpublicmarket.ca/"><img src="/images/logos/public-market.png" alt="Kingston Public Market Logo" width="204" height="146"></a>
+    </div>
+  </section>
+
+</main>  
+  </div> <!-- div.main-container -->
+
+  <footer>
+    <div class="container">      
+      <div class="footer-icons">
+  <a href="https://caims.ca/">
+    <img class="header-logo" src="/images/logos/caims-logo.png" alt="MAA Logo">
+  </a>
+  <a href="https://www.facebook.com/CAIMS.SCMAI/">
+    <img class="header-logo" src="/images/logos/facebook-logo.svg" alt="Facebook Logo">
+  </a>
+  <a href="https://twitter.com/caims_scmai">
+    <img class="header-logo" src="/images/logos/twitter-logo.svg" alt="Twitter Logo">
+  </a>
+  <a href="https://www.youtube.com/channel/UCeVUnfXOJhQBszxxJ8rJSDQ">
+    <img class="header-logo" src="/images/logos/youtube-logo.svg" alt="YouTube Logo">
+  </a>
+  <a href="http://www.fields.utoronto.ca/">
+    <img class="header-logo" src="/images/logos/fields_institute_logo.png" alt="Fields Logo">
+  </a>
+</div>      
+    </div>
+  </footer>
+  <div style="display:none">Designed by <a href="https://geneseo.edu/~aguilar">Cesar Aguilar</a></div>
+  </div> <!-- div.main-wrapper -->
+
+  <script>
+    // Removes session-message div after 2 seconds
+    
+    // Add event listener when scrolling to change navigation background
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');      
+      const scrollPos = window.scrollY;
+      if (scrollPos > 0) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+    
+  </script>
+  <script src="/js/main.js?v=1.03"></script>
+  </body>
+
+  </html>
