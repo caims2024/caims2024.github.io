@@ -7,11 +7,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/all.min.css">
-      <link rel="stylesheet" href="/css/main.min.css?v=1.39">
-      <link rel="stylesheet" href="/css/admin-widgets.css?v=1.00">
+  <link rel="stylesheet" href="/css/main.css?v=1.39">
+  <link rel="stylesheet" href="/css/admin-widgets.css?v=1.00">
   <script src="/js/widgets.js?v=1.00"></script>
   <script src="/js/jquery-3.5.0.min.js"></script>
-      <title>CAIMS 2024 | Schedule</title>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/mathjax-config.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>CAIMS 2024 | Schedule</title>
 </head>
 <body>
   <div class="main-wrapper"><button class="nav-button" id="nav-toggler" aria-label="Main menu">
@@ -53,12 +57,12 @@
             <span>Home</span>          </a>
                   </li>
               <li >
-          <a href="/about" 
+          <a href="/about.html" 
             class="a-menu ">
             <span>About</span>          </a>
                   </li>
               <li >
-          <a href="/registration" 
+          <a href="/registration.html" 
             class="a-menu ">
             <span>Registration</span>          </a>
                   </li>
@@ -68,7 +72,7 @@
             <span>Program</span><span class="submenu-icon"></span>          </a>
                       <ul class="nav-submenu">
                               <li>
-                  <a href="/schedule" class="active-menu-item">
+                  <a href="/schedule.html" class="active-menu-item">
                   <div class="d-flex align-items-center">
                     <i class="menu-icon fa-solid fa-calendar-day"></i>
                     <span class="ms-3">Schedule</span>
@@ -86,7 +90,7 @@
                   </a>                  
                 </li>
                               <li>
-                  <a href="/minisymposia" >
+                  <a href="/minisymposia.html" >
                   <div class="d-flex align-items-center">
                     <i class="menu-icon fa-solid fa-chalkboard-user"></i>
                     <span class="ms-3">Minisymposia</span>
@@ -102,7 +106,7 @@
             <span>Places</span><span class="submenu-icon"></span>          </a>
                       <ul class="nav-submenu">
                               <li>
-                  <a href="/travel" >
+                  <a href="/travel.html" >
                   <div class="d-flex align-items-center">
                     <i class="menu-icon fa-solid fa-location-dot"></i>
                     <span class="ms-3">Travel</span>
@@ -111,7 +115,7 @@
                   </a>                  
                 </li>
                               <li>
-                  <a href="/campus" >
+                  <a href="/campus.html" >
                   <div class="d-flex align-items-center">
                     <i class="menu-icon fa-solid fa-building"></i>
                     <span class="ms-3">Campus</span>
@@ -122,7 +126,7 @@
                           </ul>
                   </li>
               <li >
-          <a href="/support" 
+          <a href="/support.html" 
             class="a-menu ">
             <span>Support</span>          </a>
                   </li>
@@ -217,7 +221,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/3">Jeff Calder</a>
+                                  <a href="/program/program_glance.html?bid=3">Jeff Calder</a>
                               </span>
                           </div>
             <div class="time">
@@ -248,7 +252,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/5">Parallel Minisymposia</a>
+                                  <a href="/program/program_glance.html?bid=5">Parallel Minisymposia</a>
                               </span>
                           </div>
             <div class="time">
@@ -279,7 +283,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/7">Parallel Minisymposia</a>
+                                  <a href="/program/program_glance.html?bid=7">Parallel Minisymposia</a>
                               </span>
                           </div>
             <div class="time">
@@ -310,7 +314,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/9">Susanna Terracini</a>
+                                  <a href="/program/program_glance.html?bid=9">Susanna Terracini</a>
                               </span>
                           </div>
             <div class="time">
@@ -326,7 +330,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/10">NSERC Session &amp; Contributed Sessions</a>
+                                  <a href="/program/program_glance.html?bid=10">NSERC Session &amp; Contributed Sessions</a>
                               </span>
                           </div>
             <div class="time">
@@ -342,7 +346,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/11">Poster Session</a>
+                                  <a href="/program/program_glance.html?bid=11">Poster Session</a>
                               </span>
                           </div>
             <div class="time">
@@ -380,7 +384,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/12">CAIMS Industry Prize</a>
+                                  <a href="/program/program_glance.html?bid=12">CAIMS Industry Prize</a>
                               </span>
                           </div>
             <div class="time">
@@ -396,7 +400,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/13">CAIMS Early<br />Career Prize</a>
+                                  <a href="/program/program_glance.html?bid=13">CAIMS Early<br />Career Prize</a>
                               </span>
                           </div>
             <div class="time">
@@ -427,7 +431,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/15">Sebastian Reich</a>
+                                  <a href="/program/program_glance.html?bid=15">Sebastian Reich</a>
                               </span>
                           </div>
             <div class="time">
@@ -443,7 +447,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/16">Jim Gatheral</a>
+                                  <a href="/program/program_glance.html?bid=16">Jim Gatheral</a>
                               </span>
                           </div>
             <div class="time">
@@ -489,7 +493,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/19">Parallel Minisymposia and Contributed Sessions</a>
+                                  <a href="/program/program_glance.html?bid=19">Parallel Minisymposia and Contributed Sessions</a>
                               </span>
                           </div>
             <div class="time">
@@ -520,7 +524,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/21">Alexander Anderson</a>
+                                  <a href="/program/program_glance.html?bid=21">Alexander Anderson</a>
                               </span>
                           </div>
             <div class="time">
@@ -536,7 +540,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/22">EDII Panel</a>
+                                  <a href="/program/program_glance.html?bid=22">EDII Panel</a>
                               </span>
                           </div>
             <div class="time">
@@ -552,7 +556,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/23">Industry Panel</a>
+                                  <a href="/program/program_glance.html?bid=23">Industry Panel</a>
                               </span>
                           </div>
             <div class="time">
@@ -590,7 +594,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/24">CAIMS Research Prize</a>
+                                  <a href="/program/program_glance.html?bid=24">CAIMS Research Prize</a>
                               </span>
                           </div>
             <div class="time">
@@ -621,7 +625,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/26">Parallel Minisymposia</a>
+                                  <a href="/program/program_glance.html?bid=26">Parallel Minisymposia</a>
                               </span>
                           </div>
             <div class="time">
@@ -652,7 +656,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/37">CAIMS Doctoral Dissertation Award</a>
+                                  <a href="/program/program_glance.html?bid=37">CAIMS Doctoral Dissertation Award</a>
                               </span>
                           </div>
             <div class="time">
@@ -668,7 +672,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/28">Parallel Minisymposia</a>
+                                  <a href="/program/program_glance.html?bid=28">Parallel Minisymposia</a>
                               </span>
                           </div>
             <div class="time">
@@ -699,7 +703,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/30">Annalisa Quaini</a>
+                                  <a href="/program/program_glance.html?bid=30">Annalisa Quaini</a>
                               </span>
                           </div>
             <div class="time">
@@ -767,7 +771,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/33">Marta Lewicka</a>
+                                  <a href="/program/program_glance.html?bid=33">Marta Lewicka</a>
                               </span>
                           </div>
             <div class="time">
@@ -798,7 +802,7 @@
                     <div style="font-size:0.8rem;">
             <div class="title">
                             <span class="text-uppercase fw-bold">
-                                  <a href="/program/program_glance/35">Parallel Minisymposia and Contributed Sessions</a>
+                                  <a href="/program/program_glance.html?bid=35">Parallel Minisymposia and Contributed Sessions</a>
                               </span>
                           </div>
             <div class="time">
