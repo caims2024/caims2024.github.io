@@ -934,7 +934,9 @@
     }
   });
 
-  let bid = parseInt();
+  const urlParams = new URLSearchParams(window.location.search);
+        
+  let bid = urlParams.has('bid') ? parseInt(urlParams.get('bid')) : null;
   
   window.addEventListener('load', () => {
     if (bid) {
